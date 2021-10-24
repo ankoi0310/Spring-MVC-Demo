@@ -1,7 +1,10 @@
 package com.koi.springdemo.mvc;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class HelloWorldController {
@@ -13,6 +16,16 @@ public class HelloWorldController {
 
     @RequestMapping("/processForm")
     public String processForm() {
+        return "processForm";
+    }
+
+    @RequestMapping("/processFormVer2")
+    public String sayHello(HttpServletRequest request, Model model) {
+        String name = request.getParameter("studentName");
+        name = name.toUpperCase();
+
+        String result = "Hello " + name;
+        model.addAttribute("message", result);
         return "processForm";
     }
 }
