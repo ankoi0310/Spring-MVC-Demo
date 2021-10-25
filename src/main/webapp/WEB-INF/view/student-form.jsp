@@ -25,6 +25,12 @@
         Favorite Sport:
         Soccer <form:radiobutton path="favoriteSport" value="Soccer"/>
         E-Sport <form:radiobutton path="favoriteSport" value="E-Sport"/>
+        <br><br>
+        Programming Language:
+        C# <form:checkbox path="programmingLanguage" value="C#"/>
+        Java <form:checkbox path="programmingLanguage" value="Java"/>
+        Javascript <form:checkbox path="programmingLanguage" value="Javascript"/>
+        <br><br>
         <input type="submit" value="Submit" />
     </form:form>
 </body>
