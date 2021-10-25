@@ -22,6 +22,9 @@
             <form:options items="${student.countryOptions}" />
         </form:select>
         <br><br>
+        Favorite Sport:
+        Soccer <form:radiobutton path="favoriteSport" value="Soccer"/>
+        E-Sport <form:radiobutton path="favoriteSport" value="E-Sport"/>
         <input type="submit" value="Submit" />
     </form:form>
 </body>
