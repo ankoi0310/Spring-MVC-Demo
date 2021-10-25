@@ -12,26 +12,26 @@
     <title>Student Registration Form</title>
 </head>
 <body>
-    <form:form action="processStudentForm" modelAttribute="student">
-        First name: <form:input path="firstName" />
-        <br><br>
-        Last name: <form:input path="lastName" />
-        <br><br>
-        Country:
-        <form:select path="country">
-            <form:options items="${student.countryOptions}" />
-        </form:select>
-        <br><br>
-        Favorite Sport:
-        Soccer <form:radiobutton path="favoriteSport" value="Soccer"/>
-        E-Sport <form:radiobutton path="favoriteSport" value="E-Sport"/>
-        <br><br>
-        Programming Language:
-        C# <form:checkbox path="programmingLanguage" value="C#"/>
-        Java <form:checkbox path="programmingLanguage" value="Java"/>
-        Javascript <form:checkbox path="programmingLanguage" value="Javascript"/>
-        <br><br>
-        <input type="submit" value="Submit" />
-    </form:form>
+<form:form action="processStudentForm" modelAttribute="student">
+    First name: <form:input path="firstName"/>
+    <br><br>
+    Last name: <form:input path="lastName"/>
+    <br><br>
+    Country:
+    <form:select path="country">
+        <form:options items="${student.countryOptions}"/>
+    </form:select>
+    <br><br>
+    Favorite Sport:
+    Soccer <form:radiobutton path="favoriteSport" value="Soccer"/>
+    E-Sport <form:radiobutton path="favoriteSport" value="E-Sport"/>
+    <br><br>
+    Programming Language:
+    C# <form:checkbox path="programmingLanguage" value="C#"/>
+    Java <form:checkbox path="programmingLanguage" value="Java"/>
+    Javascript <form:checkbox path="programmingLanguage" value="Javascript"/>
+    <br><br>
+    <input type="submit" value="Submit"/>
+</form:form>
 </body>
 </html>
