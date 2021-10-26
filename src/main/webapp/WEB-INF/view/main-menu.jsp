@@ -11,9 +11,11 @@
     <title>Spring Demo</title>
 </head>
 <body>
-    <h1>Spring MVC Demo - HOMEPAGE</h1>
-    <a href="hello">Hello World Form</a>
-    <br><br>
-    <a href="student/showForm">Student Form</a>
+<h1>Spring MVC Demo - HOMEPAGE</h1>
+<a href="hello">Hello World Form</a>
+<br><br>
+<a href="student/showForm">Student Form</a>
+<br><br>
+<a href="customer/showForm">Customer Form</a>
 </body>
 </html>
