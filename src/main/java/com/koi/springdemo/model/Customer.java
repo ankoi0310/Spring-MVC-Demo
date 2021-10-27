@@ -1,9 +1,12 @@
 package com.koi.springdemo.model;
 
+import javax.validation.constraints.Size;
 
 public class Customer {
 
     private String firstName;
+
+    @Size(min = 5)
     private String lastName;
 
     public Customer() {
