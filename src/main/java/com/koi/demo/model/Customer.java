@@ -1,5 +1,7 @@
 package com.koi.demo.model;
 
+import com.koi.demo.validation.CourseCode;
+
 import javax.validation.constraints.*;
 
 public class Customer {
@@ -17,6 +19,10 @@ public class Customer {
 
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "Only 5 chars/digits")
     private String postalCode;
+
+    @NotNull(message = "Course code is required")
+    @CourseCode(value = "Code", message = "must start with code Code")
+    private String courseCode;
 
     public Customer() {
     }
@@ -51,5 +57,13 @@ public class Customer {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 }
