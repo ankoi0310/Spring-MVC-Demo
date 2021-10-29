@@ -6,13 +6,14 @@ public class Customer {
 
     private String firstName;
 
-    @NotNull
+    @NotNull(message = "is required")
     @Size(min = 5)
     private String lastName;
 
+    @NotNull(message = "is required")
     @Min(value = 18, message = "Must be at least 18")
     @Max(value = 120, message = "Must be less than 120")
-    private int age;
+    private Integer age;
 
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "Only 5 chars/digits")
     private String postalCode;
@@ -36,11 +37,11 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
