@@ -1,11 +1,13 @@
 package com.koi.demo.model;
 
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 public class Customer {
 
     private String firstName;
 
+    @NotNull
     @Size(min = 5)
     private String lastName;
 
