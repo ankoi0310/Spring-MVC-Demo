@@ -1,4 +1,4 @@
-package com.koi.springdemo.model;
+package com.koi.demo.model;
 
 import javax.validation.constraints.Size;
 

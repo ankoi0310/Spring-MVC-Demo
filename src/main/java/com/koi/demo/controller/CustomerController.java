@@ -1,6 +1,6 @@
-package com.koi.springdemo.mvc;
+package com.koi.demo.controller;
 
-import com.koi.springdemo.model.Customer;
+import com.koi.demo.model.Customer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

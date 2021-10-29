@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.koi</groupId>
-    <artifactId>springdemo</artifactId>
+    <artifactId>demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>springdemo</name>
+    <name>demo</name>
     <packaging>war</packaging>
 
     <properties>

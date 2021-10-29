@@ -1,14 +1,11 @@
-package com.koi.springdemo.mvc;
+package com.koi.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.HttpServletRequest;
-
 @Controller
-@RequestMapping("/helloworld")
 public class HelloWorldController {
 
     @RequestMapping("/hello")
