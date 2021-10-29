@@ -1,9 +1,6 @@
 package com.koi.demo.model;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 public class Customer {
 
@@ -16,6 +13,9 @@ public class Customer {
     @Min(value = 18, message = "Must be at least 18")
     @Max(value = 120, message = "Must be less than 120")
     private int age;
+
+    @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "Only 5 chars/digits")
+    private String postalCode;
 
     public Customer() {
     }
@@ -42,5 +42,13 @@ public class Customer {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
     }
 }
